@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - UX Designer & Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" >
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+        tailwind.config={
+            theme:{
+                extend:{
+                    colors:{
+                        primary:'#3b82f6',
+                        secondary:'#6366f1'
+                    },
+                    borderRadius:{
+                        'none':'0px',
+                        'sm':'4px',
+                        DEFAULT:'8px',
+                        'md':'12px',
+                        'lg':'16px',
+                        'xl':'20px',
+                        '2xl':'24px',
+                        '3xl':'32px',
+                        'full':'9999px',
+                        'button':'8px'
+                    }
+                },
+                fontFamily: {
+                    sans: ['Inter', 'sans-serif'],
+                }
+            }
+        }
+    </script>
+    <!-- Email.Js start -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("WODGrutCj_VRF3Cwf");
+
+        })();
+    </script>
+    <!-- Email.Js END -->
+</head>
+<body class="font-sans text-gray-800 bg-gray-50">
+    <a href="#main" class="skip-link">Skip to main content</a>
+    
+    <header class="bg-white shadow-sm fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center" aria-label="Main navigation">
+            <a href="#" class="text-2xl font-['Pacifico'] text-primary">John Doe </a>
+            
+            <button id="menu-toggle" class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
+                <i class="ri-menu-line ri-lg"></i>
+            </button>
+            
+            <div id="desktop-menu" class="hidden md:flex space-x-8">
+                <a href="#about" class="text-gray-700 hover:text-primary transition-colors">About</a>
+                <a href="#projects" class="text-gray-700 hover:text-primary transition-colors">Projects</a>
+                <a href="#skills" class="text-gray-700 hover:text-primary transition-colors">Skills</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-primary transition-colors">Testimonials</a>
+                <a href="#contact" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
+            </div>
+            
+            <div id="mobile-menu" class="mobile-menu fixed inset-0 bg-white z-50 p-6 flex flex-col md:hidden">
+                <div class="flex justify-between items-center mb-8">
+                    <a href="#" class="text-2xl font-['Pacifico'] text-primary">John Doe</a>
+                    <button id="menu-close" class="w-10 h-10 flex items-center justify-center text-gray-700" aria-label="Close menu">
+                        <i class="ri-close-line ri-lg"></i>
+                    </button>
+                </div>
+                <div class="flex flex-col space-y-6">
+                    <a href="#about" class="text-xl text-gray-700 hover:text-primary transition-colors">About</a>
+                    <a href="#projects" class="text-xl text-gray-700 hover:text-primary transition-colors">Projects</a>
+                    <a href="#skills" class="text-xl text-gray-700 hover:text-primary transition-colors">Skills</a>
+                    <a href="#testimonials" class="text-xl text-gray-700 hover:text-primary transition-colors">Testimonials</a>
+                    <a href="#contact" class="text-xl text-gray-700 hover:text-primary transition-colors">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main id="main" class="pt-20">
+        <section class="relative bg-gradient-to-r from-blue-50 to-indigo-50 overflow-hidden" aria-labelledby="hero-heading">
+            <div class="container mx-auto px-4 py-20 md:py-32 flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 z-10">
+                    <h1 id="hero-heading" class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+                        Creating <span class="text-primary">accessible</span> digital experiences
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-700 mb-8 max-w-xl">
+                        UX Designer & Frontend Developer specializing in accessible, responsive, and user-centered digital solutions that work for everyone.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#projects" class="bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap inline-flex items-center justify-center font-medium hover:bg-blue-600 transition-colors">
+                            View My Work
+                            <i class="ri-arrow-right-line ml-2"></i>
+                        </a>
+                        <a href="#contact" class="bg-white text-primary border border-primary px-6 py-3 !rounded-button whitespace-nowrap inline-flex items-center justify-center font-medium hover:bg-blue-50 transition-colors">
+                            Contact Me
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 mt-12 md:mt-0 relative">
+                    <img 
+                        src="https://public.readdy.ai/ai/img_res/38fd5d29ab904d8d76d16d67422c347b.jpg" 
+                        alt="John Doe, UX Designer and Frontend Developer" 
+                        class="w-full max-w-md mx-auto rounded-full shadow-xl object-top"
+                        width="600"
+                        height="600"
+                    />
+                </div>
+            </div>
+        </section>
+        
+        <section id="about" class="py-20 bg-white" aria-labelledby="about-heading">
+            <div class="container mx-auto px-4">
+                <h2 id="about-heading" class="text-3xl md:text-4xl font-bold text-center mb-16">About Me</h2>
+                
+                <div class="flex flex-col md:flex-row gap-12 items-center">
+                    <div class="md:w-1/2">
+                        <img 
+                            src="https://public.readdy.ai/ai/img_res/12b8828f254ae09a3b1e1cfca7c4e60d.jpg" 
+                            alt="John Doe working on accessibility design projects" 
+                            class="w-full rounded-lg shadow-md object-top"
+                            width="600"
+                            height="450"
+                        />
+                    </div>
+                    <div class="md:w-1/2">
+                        <h3 class="text-2xl font-semibold mb-4">Hello, I'm John Doe</h3>
+                        <p class="text-gray-700 mb-4">
+                            With over 8 years of experience in UX design and frontend development, I specialize in creating digital experiences that are not only visually appealing but also accessible to all users, regardless of their abilities.
+                        </p>
+                        <p class="text-gray-700 mb-4">
+                            My passion for accessibility began when I worked with a nonprofit organization serving people with disabilities. This experience taught me the importance of inclusive design and how technology can empower everyone when built thoughtfully.
+                        </p>
+                        <p class="text-gray-700 mb-6">
+                            I believe that great design should work for everyone. By focusing on accessibility from the start of each project, I create solutions that are more usable, more inclusive, and ultimately more successful.
+                        </p>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">UX Design</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Frontend Development</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Accessibility</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Responsive Design</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">User Research</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projects" class="py-20 bg-gray-50" aria-labelledby="projects-heading">
+            <div class="container mx-auto px-4">
+                <h2 id="projects-heading" class="text-3xl md:text-4xl font-bold text-center mb-6">My Projects</h2>
+                <p class="text-gray-700 text-center max-w-2xl mx-auto mb-12">
+                    A selection of my recent work focusing on accessible and responsive design solutions.
+                </p>
+                
+                <div class="mb-8 flex justify-center">
+                    <div class="inline-flex p-1 bg-gray-100 rounded-full" role="tablist" aria-label="Filter projects by category">
+                        <button class="px-4 py-2 !rounded-full whitespace-nowrap bg-white shadow text-gray-800" role="tab" aria-selected="true" aria-controls="all-projects">All Projects</button>
+                        <button class="px-4 py-2 !rounded-full whitespace-nowrap text-gray-600 hover:bg-gray-200 transition-colors" role="tab" aria-selected="false" aria-controls="ux-design">UX Design</button>
+                        <button class="px-4 py-2 !rounded-full whitespace-nowrap text-gray-600 hover:bg-gray-200 transition-colors" role="tab" aria-selected="false" aria-controls="development">Development</button>
+                        <button class="px-4 py-2 !rounded-full whitespace-nowrap text-gray-600 hover:bg-gray-200 transition-colors" role="tab" aria-selected="false" aria-controls="accessibility">Accessibility</button>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <article class="project-card bg-white rounded-lg overflow-hidden shadow-md">
+                        <div class="relative aspect-video">
+                            <img 
+                                src="https://public.readdy.ai/ai/img_res/0e8fc3a4e317253cc1d877e17bdd7bcf.jpg" 
+                                alt="AccessShop e-commerce website showing responsive design on multiple devices" 
+                                class="w-full h-full object-cover object-top"
+                                width="600"
+                                height="400"
+                            />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">AccessShop E-commerce</h3>
+                            <p class="text-gray-600 mb-4">
+                                Redesigned an e-commerce platform with WCAG 2.1 compliance, improving accessibility for screen reader users and keyboard navigation.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-50 text-blue-700 px-2 py-1 rounded text-xs">E-commerce</span>
+                                <span class="bg-blue-50 text-blue-700 px-2 py-1 rounded text-xs">Accessibility</span>
+                                <span class="bg-blue-50 text-blue-700 px-2 py-1 rounded text-xs">Responsive</span>
+                            </div>
+                            <a href="#" class="text-primary font-medium inline-flex items-center hover:underline">
+                                View Case Study
+                                <i class="ri-arrow-right-line ml-1"></i>
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card bg-white rounded-lg overflow-hidden shadow-md">
+                        <div class="relative aspect-video">
+                            <img 
+                                src="https://public.readdy.ai/ai/img_res/53ff61778827e221a385125c62d3b1cb.jpg" 
+                                alt="HealthConnect mobile app interface showing accessible features" 
+                                class="w-full h-full object-cover object-top"
+                                width="600"
+                                height="400"
+                            />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">HealthConnect App</h3>
+                            <p class="text-gray-600 mb-4">
+                                Designed a healthcare app with voice navigation, high contrast modes, and simplified interfaces for users with various abilities.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-50 text-blue-700 px-2 py-1 rounded text-xs">Mobile App</span>
+                                <span class="bg-blue-50 text-blue-700 px-2 py-1 rounded text-xs">Healthcare</span>
+                                <span class="bg-blue-50 text-blue-700 px-2 py-1 rounded text-xs">UX Design</span>
+                            </div>
+                            <a href="#" class="text-primary font-medium inline-flex items-center hover:underline">
+                                View Case Study
+                                <i class="ri-arrow-right-line ml-1"></i>
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card bg-white rounded-lg overflow-hidden shadow-md">
+                        <div class="relative aspect-video">
+                            <img 
+                                src="https://public.readdy.ai/ai/img_res/a917aa2189be2b8ab55fee2e6a90162f.jpg" 
+                                alt="EduAccess dashboard showing accessible data visualization" 
+                                class="w-full h-full object-cover object-top"
+                                width="600"
+                                height="400"
+                            />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">EduAccess Dashboard</h3>
+                            <p class="text-gray-600 mb-4">
+                                Created an educational platform with accessible data visualizations, keyboard-navigable interfaces, and screen reader compatibility.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-50 text-blue-700 px-2 py-1 rounded text-xs">Web App</span>
+                                <span class="bg-blue-50 text-blue-700 px-2 py-1 rounded text-xs">Education</span>
+                                <span class="bg-blue-50 text-blue-700 px-2 py-1 rounded text-xs">Data Visualization</span>
+                            </div>
+                            <a href="#" class="text-primary font-medium inline-flex items-center hover:underline">
+                                View Case Study
+                                <i class="ri-arrow-right-line ml-1"></i>
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card bg-white rounded-lg overflow-hidden shadow-md">
+                        <div class="relative aspect-video">
+                            <img 
+                                src="https://public.readdy.ai/ai/img_res/dd8afb369d0be49204e8d7b9ab091585.jpg" 
+                                alt="CivicAccess portal showing accessible government services interface" 
+                                class="w-full h-full object-cover object-top"
+                                width="600"
+                                height="400"
+                            />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">CivicAccess Portal</h3>
+                            <p class="text-gray-600 mb-4">
+                                Redesigned a government services portal to meet Section 508 compliance, with simplified forms and multilingual support.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-50 text-blue-700 px-2 py-1 rounded text-xs">Government</span>
+                                <span class="bg-blue-50 text-blue-700 px-2 py-1 rounded text-xs">Section 508</span>
+                                <span class="bg-blue-50 text-blue-700 px-2 py-1 rounded text-xs">Multilingual</span>
+                            </div>
+                            <a href="#" class="text-primary font-medium inline-flex items-center hover:underline">
+                                View Case Study
+                                <i class="ri-arrow-right-line ml-1"></i>
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card bg-white rounded-lg overflow-hidden shadow-md">
+                        <div class="relative aspect-video">
+                            <img 
+                                src="https://public.readdy.ai/ai/img_res/25b23c68471ca35485c6f021b5f154f3.jpg" 
+                                alt="FinanceForAll mobile banking app showing accessible interface" 
+                                class="w-full h-full object-cover object-top"
+                                width="600"
+                                height="400"
+                            />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">FinanceForAll Banking</h3>
+                            <p class="text-gray-600 mb-4">
+                                Developed a mobile banking application with voice commands, simplified workflows, and customizable interfaces for diverse users.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-50 text-blue-700 px-2 py-1 rounded text-xs">Finance</span>
+                                <span class="bg-blue-50 text-blue-700 px-2 py-1 rounded text-xs">Mobile</span>
+                                <span class="bg-blue-50 text-blue-700 px-2 py-1 rounded text-xs">Voice UI</span>
+                            </div>
+                            <a href="#" class="text-primary font-medium inline-flex items-center hover:underline">
+                                View Case Study
+                                <i class="ri-arrow-right-line ml-1"></i>
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card bg-white rounded-lg overflow-hidden shadow-md">
+                        <div class="relative aspect-video">
+                            <img 
+                                src="https://public.readdy.ai/ai/img_res/a0f5c6de544eba1441144302ca54af44.jpg" 
+                                alt="TravelForAll website showing accessible booking interface" 
+                                class="w-full h-full object-cover object-top"
+                                width="600"
+                                height="400"
+                            />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">TravelForAll Website</h3>
+                            <p class="text-gray-600 mb-4">
+                                Created a travel booking platform with accessible date pickers, simplified checkout, and screen reader optimized content.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-50 text-blue-700 px-2 py-1 rounded text-xs">Travel</span>
+                                <span class="bg-blue-50 text-blue-700 px-2 py-1 rounded text-xs">Booking</span>
+                                <span class="bg-blue-50 text-blue-700 px-2 py-1 rounded text-xs">WCAG 2.1</span>
+                            </div>
+                            <a href="#" class="text-primary font-medium inline-flex items-center hover:underline">
+                                View Case Study
+                                <i class="ri-arrow-right-line ml-1"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="text-center mt-12">
+                    <a href="#" class="inline-flex items-center justify-center px-6 py-3 border border-primary text-primary !rounded-button whitespace-nowrap font-medium hover:bg-blue-50 transition-colors">
+                        View All Projects
+                        <i class="ri-arrow-right-line ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="skills" class="py-20 bg-white" aria-labelledby="skills-heading">
+            <div class="container mx-auto px-4">
+                <h2 id="skills-heading" class="text-3xl md:text-4xl font-bold text-center mb-16">My Skills & Expertise</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+                        <div class="w-16 h-16 flex items-center justify-center bg-blue-100 text-primary rounded-lg mb-6">
+                            <i class="ri-layout-4-line ri-2x"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">UX/UI Design</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="ml-2">User research & testing</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="ml-2">Wireframing & prototyping</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="ml-2">Information architecture</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="ml-2">Usability heuristics</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="ml-2">Design systems</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+                        <div class="w-16 h-16 flex items-center justify-center bg-blue-100 text-primary rounded-lg mb-6">
+                            <i class="ri-code-s-slash-line ri-2x"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Frontend Development</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="ml-2">HTML5, CSS3, JavaScript</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="ml-2">React, Vue.js</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="ml-2">Responsive frameworks</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="ml-2">CSS animations & transitions</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="ml-2">Performance optimization</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+                        <div class="w-16 h-16 flex items-center justify-center bg-blue-100 text-primary rounded-lg mb-6">
+                            <i class="ri-universal-access-line ri-2x"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Accessibility</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="ml-2">WCAG 2.1 guidelines</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="ml-2">Screen reader compatibility</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="ml-2">Keyboard navigation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="ml-2">Color contrast analysis</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="ml-2">Accessibility auditing</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+                        <div class="w-16 h-16 flex items-center justify-center bg-blue-100 text-primary rounded-lg mb-6">
+                            <i class="ri-smartphone-line ri-2x"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Responsive Design</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="ml-2">Mobile-first approach</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="ml-2">Fluid layouts & typography</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="ml-2">Breakpoint optimization</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="ml-2">Touch-friendly interfaces</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="ml-2">Cross-device testing</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+                        <div class="w-16 h-16 flex items-center justify-center bg-blue-100 text-primary rounded-lg mb-6">
+                            <i class="ri-tools-line ri-2x"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Tools & Software</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="ml-2">Figma, Adobe XD, Sketch</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="ml-2">VS Code, Git</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="ml-2">WAVE, axe, Lighthouse</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="ml-2">NVDA, VoiceOver</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="ml-2">Contrast analyzers</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+                        <div class="w-16 h-16 flex items-center justify-center bg-blue-100 text-primary rounded-lg mb-6">
+                            <i class="ri-user-voice-line ri-2x"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Soft Skills</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="ml-2">Empathetic design thinking</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="ml-2">Clear communication</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="ml-2">Stakeholder management</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="ml-2">Problem-solving</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="ml-2">Continuous learning</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mt-16">
+                    <h3 class="text-2xl font-semibold mb-8 text-center">Technical Proficiency</h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">HTML5 & Semantic Markup</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="h-3 bg-gray-200 rounded-full overflow-hidden">
+                                <div class="h-full bg-primary rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">CSS3 & Responsive Design</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="h-3 bg-gray-200 rounded-full overflow-hidden">
+                                <div class="h-full bg-primary rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">JavaScript & Frameworks</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="h-3 bg-gray-200 rounded-full overflow-hidden">
+                                <div class="h-full bg-primary rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">WCAG & Accessibility Standards</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="h-3 bg-gray-200 rounded-full overflow-hidden">
+                                <div class="h-full bg-primary rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">UX Research & Testing</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="h-3 bg-gray-200 rounded-full overflow-hidden">
+                                <div class="h-full bg-primary rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Design Systems</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="h-3 bg-gray-200 rounded-full overflow-hidden">
+                                <div class="h-full bg-primary rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="testimonials" class="py-20 bg-gray-50" aria-labelledby="testimonials-heading">
+            <div class="container mx-auto px-4">
+                <h2 id="testimonials-heading" class="text-3xl md:text-4xl font-bold text-center mb-16">Client Testimonials</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <div class="flex items-center mb-6">
+                            <div class="text-yellow-400 flex">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                        </div>
+                        <blockquote class="mb-6">
+                            <p class="text-gray-700 italic">
+                                "John  transformed our e-commerce platform to be fully accessible. Our conversion rates increased by 23% and we've received positive feedback from users with disabilities. Their attention to detail was exceptional."
+                            </p>
+                        </blockquote>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-gray-200 rounded-full overflow-hidden mr-4">
+                                <img 
+                                    src="https://public.readdy.ai/ai/img_res/9aacab378823d8f427dee679267cd347.jpg" 
+                                    alt="Sarah Johnson" 
+                                    class="w-full h-full object-cover object-top"
+                                    width="100"
+                                    height="100"
+                                />
+                            </div>
+                            <div>
+                                <p class="font-medium">Sarah Johnson</p>
+                                <p class="text-gray-600 text-sm">CTO, RetailPlus</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <div class="flex items-center mb-6">
+                            <div class="text-yellow-400 flex">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                        </div>
+                        <blockquote class="mb-6">
+                            <p class="text-gray-700 italic">
+                                "Working with John on our healthcare app was a game-changer. They understood the unique accessibility needs of our diverse user base and delivered a solution that's intuitive for everyone, including elderly users and those with disabilities."
+                            </p>
+                        </blockquote>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-gray-200 rounded-full overflow-hidden mr-4">
+                                <img 
+                                    src="https://public.readdy.ai/ai/img_res/c7fef5ef2a2c4eafc039278315a87d83.jpg" 
+                                    alt="Dr. Michael Chen" 
+                                    class="w-full h-full object-cover object-top"
+                                    width="100"
+                                    height="100"
+                                />
+                            </div>
+                            <div>
+                                <p class="font-medium">Dr. Michael Chen</p>
+                                <p class="text-gray-600 text-sm">Product Lead, HealthTech Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <div class="flex items-center mb-6">
+                            <div class="text-yellow-400 flex">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                        </div>
+                        <blockquote class="mb-6">
+                            <p class="text-gray-700 italic">
+                                "John's redesign of our educational platform made our content accessible to all students, including those with learning disabilities. Their expertise in both UX design and accessibility standards was invaluable to our project's success."
+                            </p>
+                        </blockquote>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-gray-200 rounded-full overflow-hidden mr-4">
+                                <img 
+                                    src="https://public.readdy.ai/ai/img_res/b9b28b07e98c36052dc3d919ea978435.jpg" 
+                                    alt="Emily Rodriguez" 
+                                    class="w-full h-full object-cover object-top"
+                                    width="100"
+                                    height="100"
+                                />
+                            </div>
+                            <div>
+                                <p class="font-medium">Emily Rodriguez</p>
+                                <p class="text-gray-600 text-sm">Director of Digital Learning, EduTech</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="py-20 bg-white" aria-labelledby="contact-heading">
+            <div class="container mx-auto px-4">
+                <h2 id="contact-heading" class="text-3xl md:text-4xl font-bold text-center mb-6">Get In Touch</h2>
+                <p class="text-gray-700 text-center max-w-2xl mx-auto mb-12">
+                    Have a project in mind or want to discuss how I can help make your digital product more accessible? I'd love to hear from you.
+                </p>
+                
+                <div class="flex flex-col md:flex-row gap-12">
+                    <div class="md:w-1/2">
+                        <form class="space-y-6" aria-labelledby="contact-form-heading">
+                            <h3 id="contact-form-heading" class="text-xl font-semibold mb-4">Send Me a Message</h3>
+                            
+                            <div>
+                                <label for="name" class="block text-gray-700 mb-2">Name</label>
+                                <input 
+                                    type="text" 
+                                    id="name" 
+                                    name="name" 
+                                    class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary focus:ring-2 focus:ring-primary/20 text-gray-800"
+                                    required
+                                    aria-required="true"
+                                />
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-gray-700 mb-2">Email</label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary focus:ring-2 focus:ring-primary/20 text-gray-800"
+                                    required
+                                    aria-required="true"
+                                />
+                            </div>
+                            
+                            <div>
+                                <label for="subject" class="block text-gray-700 mb-2">Subject</label>
+                                <input 
+                                    type="text" 
+                                    id="subject" 
+                                    name="subject" 
+                                    class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary focus:ring-2 focus:ring-primary/20 text-gray-800"
+                                />
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-gray-700 mb-2">Message</label>
+                                <textarea 
+                                    id="message" 
+                                    name="message" 
+                                    rows="5" 
+                                    class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary focus:ring-2 focus:ring-primary/20 text-gray-800"
+                                    required
+                                    aria-required="true"
+                                ></textarea>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <input 
+                                    type="checkbox" 
+                                    id="consent" 
+                                    name="consent" 
+                                    required
+                                    aria-required="true"
+                                />
+                                <label for="consent" class="ml-2 text-gray-700">
+                                    I consent to having my information stored for contact purposes
+                                </label>
+                            </div>
+                            
+                            <button 
+                                type="submit" 
+                                class="bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap inline-flex items-center justify-center font-medium hover:bg-blue-600 transition-colors"
+                                aria-label="Send message" 
+                                onclick="sendMail()"
+                            >
+                                Send Message
+                                <i class="ri-send-plane-line ml-2"></i>
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <div class="md:w-1/2">
+                        <div class="bg-gray-50 p-8 rounded-lg h-full">
+                            <h3 class="text-xl font-semibold mb-6">Contact Information</h3>
+                            
+                            <div class="space-y-6">
+                                <div class="flex items-start">
+                                    <div class="w-10 h-10 flex items-center justify-center bg-blue-100 text-primary rounded-full mr-4">
+                                        <i class="ri-mail-line"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium">Email</p>
+                                        <a href="mailto:johndoedesigns@xyz.com" class="text-primary hover:underline">johndoedesigns@xyz.com</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="w-10 h-10 flex items-center justify-center bg-blue-100 text-primary rounded-full mr-4">
+                                        <i class="ri-phone-line"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium">Phone</p>
+                                        <a href="tel:+14155552671" class="text-primary hover:underline">+1 (415) 555-2671</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="w-10 h-10 flex items-center justify-center bg-blue-100 text-primary rounded-full mr-4">
+                                        <i class="ri-map-pin-line"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium">Location</p>
+                                        <p class="text-gray-700">San Francisco, California</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="w-10 h-10 flex items-center justify-center bg-blue-100 text-primary rounded-full mr-4">
+                                        <i class="ri-time-line"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium">Working Hours</p>
+                                        <p class="text-gray-700">Monday - Friday: 9am - 5pm PST</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-8">
+                                <h4 class="font-medium mb-4">Connect With Me</h4>
+                                <div class="flex space-x-4">
+                                    <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-200 hover:bg-primary hover:text-white rounded-full transition-colors" aria-label="LinkedIn profile">
+                                        <i class="ri-linkedin-fill"></i>
+                                    </a>
+                                    <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-200 hover:bg-primary hover:text-white rounded-full transition-colors" aria-label="Twitter profile">
+                                        <i class="ri-twitter-fill"></i>
+                                    </a>
+                                    <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-200 hover:bg-primary hover:text-white rounded-full transition-colors" aria-label="GitHub profile">
+                                        <i class="ri-github-fill"></i>
+                                    </a>
+                                    <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-200 hover:bg-primary hover:text-white rounded-full transition-colors" aria-label="Dribbble profile">
+                                        <i class="ri-dribbble-fill"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-8">
+                                <h4 class="font-medium mb-4">Accessibility Preferences</h4>
+                                <div class="space-y-4">
+                                    <div class="flex items-center justify-between">
+                                        <label for="contrast" class="text-gray-700">High Contrast</label>
+                                        <label class="switch">
+                                            <input type="checkbox" id="contrast">
+                                            <span class="slider"></span>
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="flex items-center justify-between">
+                                        <label for="text-size" class="text-gray-700">Text Size</label>
+                                        <input 
+                                            type="range" 
+                                            id="text-size" 
+                                            min="1" 
+                                            max="3" 
+                                            value="1" 
+                                            class="w-32"
+                                            aria-label="Adjust text size"
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between mb-12">
+                <div class="mb-8 md:mb-0">
+                    <a href="#" class="text-2xl font-['Pacifico'] text-white mb-4 inline-block">John Doe</a>
+                    <p class="text-gray-400 max-w-xs">
+                        Creating accessible digital experiences that work for everyone, regardless of ability.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Site Map</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                            <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+                            <li><a href="#projects" class="text-gray-400 hover:text-white transition-colors">Projects</a></li>
+                            <li><a href="#skills" class="text-gray-400 hover:text-white transition-colors">Skills</a></li>
+                            <li><a href="#testimonials" class="text-gray-400 hover:text-white transition-colors">Testimonials</a></li>
+                            <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Accessibility Guide</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Case Studies</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Design Resources</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Legal</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Accessibility Statement</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">
+                    &copy; 2025 John Doe. All rights reserved.
+                </p>
+                
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors" aria-label="LinkedIn profile">
+                        <i class="ri-linkedin-fill ri-lg"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors" aria-label="Twitter profile">
+                        <i class="ri-twitter-fill ri-lg"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors" aria-label="GitHub profile">
+                        <i class="ri-github-fill ri-lg"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors" aria-label="Dribbble profile">
+                        <i class="ri-dribbble-fill ri-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+        <script src="script.js"></script>
+</body>
+</html>
